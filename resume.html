@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emran Hossen | Full Stack Developer CV</title>
+    <style>
+        :root {
+            /* Your preferred Bangladesh-inspired palette */
+            --primary-color: #006a4e; /* Deep Green */
+            --accent-color: #f42a41;  /* Vibrant Red */
+            --text-dark: #2d3436;
+            --text-light: #636e72;
+            --bg-gray: #f9f9f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        /* A4 Paper Styling */
+        .cv-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 40px auto;
+            background: white;
+            padding: 20mm;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Header Section */
+        header {
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32pt;
+            color: var(--primary-color);
+            letter-spacing: -1px;
+        }
+
+        .job-title {
+            font-size: 16pt;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+            font-size: 10pt;
+        }
+
+        .contact-grid a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-grid a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 25px;
+        }
+
+        .section-header {
+            font-size: 14pt;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-item b {
+            color: var(--primary-color);
+            display: inline-block;
+            width: 100px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 20px;
+        }
+
+        .project-title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .project-name {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #2d3436;
+        }
+
+        .repo-links a {
+            font-size: 9pt;
+            color: var(--accent-color);
+            text-decoration: none;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+            font-size: 10.5pt;
+            line-height: 1.4;
+        }
+
+        /* Print Media Query */
+        @media print {
+            body { background: none; padding: 0; }
+            .cv-container { margin: 0; box-shadow: none; width: 100%; }
+            .repo-links a { color: #d63031 !important; } /* High contrast for print */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header>
+            <h1>EMRAN HOSSEN</h1>
+            <div class="job-title">Full Stack Web Developer (MERN)</div>
+            <div class="contact-grid">
+                <div>📍 Dhaka, Bangladesh</div>
+                <div>📞 01739642983</div>
+                <div>📧 <a href="mailto:dev.emranhossen@gmail.com">dev.emranhossen@gmail.com</a></div>
+                <div>🌐 <a href="https://emranhossen.vercel.app">emranhossen.vercel.app</a></div>
+                <div>💻 <a href="https://github.com/emranhossen-dev">github.com/emranhossen-dev</a></div>
+                <div>🔗 <a href="https://linkedin.com/in/emranhossen-dev">linkedin.com/in/emranhossen-dev</a></div>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-header">Professional Summary</div>
+            <p style="text-align: justify; line-height: 1.6; font-size: 10.5pt;">
+                Dynamic MERN Stack Developer with a focus on creating secure, scalable, and visually compelling web applications. 
+                Expertise in modern UI styles including Glassmorphism and responsive design. Passionate about transitioning 
+                into a Full Stack role, leveraging experience with Prisma, Zustand, and the latest React ecosystem to deliver 
+                high-quality codebases and seamless user experiences.
+            </p>
+        </section>
+
+        <section>
+            <div class="section-header">Technical Expertise</div>
+            <div class="skills-container">
+                <div class="skill-item"><b>Frontend:</b> React.js, Next.js, Tailwind CSS</div>
+                <div class="skill-item"><b>Backend:</b> Node.js, Express.js</div>
+                <div class="skill-item"><b>Database:</b> MongoDB</div>
+                <div class="skill-item"><b>State/Tools:</b> Git, Vercel, Firebase</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">Core Projects</div>
+            
+            <div class="project">
+                <div class="project-title-row">
+                    <span class="project-name">IRONLOCKER — Secure Digital Vault</span>
+                    <span class="repo-links">
+                        <a href="https://github.com/emranhossen-dev/ironlocker-frontend">Frontend</a>
+                        <a href="https://github.com/emranhossen-dev/ironlocker-backend">Backend</a>
+                    </span>
+                </div>
+                <ul>
+                    <li>Built a secure asset management dashboard using React and Node.js.</li>
+                    <li>Designed an intuitive folder organization system with custom deletion logic.</li>
+                    <li>Integrated a specialized photo viewer and asset management dashboard.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-title-row">
+                    <span class="project-name">Modern Glass Calculator</span>
+                    <span class="repo-links">
+                        <a href="https://github.com/emranhossen-dev/glass-calculator">Source Code</a>
+                    </span>
+                </div>
+                <ul>
+                    <li>Developed a performance-focused calculator using Glassmorphism design principles.</li>
+                    <li>Wrote framework-free, beginner-friendly CSS and JS for maximum speed and control.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-title-row">
+                    <span class="project-name">Liberation War Archive</span>
+                    <span class="repo-links">
+                        <a href="https://github.com/emranhossen-dev/history-archive">Source Code</a>
+                    </span>
+                </div>
+                <ul>
+                    <li>Engineered an educational platform focusing on national history with semantic HTML.</li>
+                    <li>Optimized application for SEO and accessibility across all screen sizes.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">Experience</div>
+            <div class="project">
+                <div class="project-title-row">
+                    <span class="project-name">Independent Web Developer</span>
+                    <span>2024 – Present</span>
+                </div>
+                <ul>
+                    <li>Building and deploying full-stack applications on Vercel with custom domain management.</li>
+                    <li>Utilizing **Zustand** for efficient global state management in modern React apps.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">Education & Goals</div>
+            <p style="font-size: 10.5pt;">
+                <b>Full Stack Development Program:</b> Active focus on MERN stack, JavaScript ES6+, and API design. 
+                Currently expanding expertise in database relational mapping and secure authentication systems.
+            </p>
+        </section>
+    </div>
+
+</body>
+</html>
